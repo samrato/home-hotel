@@ -17,6 +17,22 @@
                 <a href="#rooms">Rooms</a>
                 <a href="#contact">Contact</a>
             </nav>
+
+            <!-- Booking Form -->
+            <form class="booking-form" action="#" method="post">
+                <input type="date" name="check-in" placeholder="Check-in" required>
+                <input type="date" name="check-out" placeholder="Check-out" required>
+                <select name="room-type" required>
+                    <option value="" disabled selected>Room Type</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="executive">Executive Suite</option>
+                    <option value="family">Family Room</option>
+                    <option value="adjoining">Adjoining Room</option>
+                    <option value="standard">Standard Room</option>
+                    <option value="connecting">Connecting Room</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
         </div>
     </header>
 
@@ -45,47 +61,14 @@
                 <h2>Our Rooms</h2>
 
                 <div class="rooms-grid">
+                    <!-- Room 1 -->
                     <div class="room">
                         <img class="hotel-image" src="photo/jp2.jpg" alt="Deluxe Room">
                         <h3>Deluxe Room</h3>
                         <p>Spacious and luxurious room with a beautiful view.</p>
                         <p class="price">$1500 per night</p>
                     </div>
-
-                    <div class="room">
-                        <img class="hotel-image" src="photo/jp1.jpg" alt="Executive Suite">
-                        <h3>Executive Suite</h3>
-                        <p>Elegant suite with modern amenities and a private balcony.</p>
-                        <p class="price">$2000 per night</p>
-                    </div>
-
-                    <div class="room">
-                        <img class="hotel-image" src="photo/JP3.jpg" alt="Family Room">
-                        <h3>Family Room</h3>
-                        <p>Specifically designed for families, offering more sleeping space and child-friendly amenities.</p>
-                        <p class="price">$2000 per night</p>
-                    </div>
-
-                    <div class="room">
-                        <img class="hotel-image" src="photo/JP7.jpg" alt="Adjoining Rooms">
-                        <h3>Adjoining Rooms</h3>
-                        <p>Rooms located next to each other, but without an internal connecting door.</p>
-                        <p class="price">$1000 per night</p>
-                    </div>
-
-                    <div class="room">
-                        <img class="hotel-image" src="photo/JP5.jpg" alt="Standard Room">
-                        <h3>Standard Room</h3>
-                        <p>The most basic type of hotel room, usually with standard amenities and furnishings.</p>
-                        <p class="price">$800 per night</p>
-                    </div>
-
-                    <div class="room">
-                        <img class="hotel-image" src="photo/JP6.jpg" alt="Connecting Rooms">
-                        <h3>Connecting Rooms</h3>
-                        <p>Two or more rooms with a connecting door, suitable for families or groups.</p>
-                        <p class="price">$3000 per night</p>
-                    </div>
+                    <!-- Add more rooms as required -->
                 </div>
             </div>
         </section>

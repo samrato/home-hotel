@@ -1,120 +1,116 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 h1, h2, h3 {
     margin: 0;
+    padding-bottom: 10px;
 }
 
-/* Header */
-.sticky-header {
+/* Header Styles */
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 15px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #0056b3; /* Sleek blue color */
-    padding: 1px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
+header .header-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    font-size: 1.8em;
-    color: #fff;
-    text-align: center;
-    flex: 1;
+    font-size: 1.5rem;
 }
 
-.nav-menu {
+header .nav-menu {
     display: flex;
-    gap: 15px;
-    flex: 1;
-    justify-content: center;
-    margin-top: 10px;
+    gap: 20px;
 }
 
-.nav-menu a {
+header .nav-menu a {
     color: #fff;
-    font-size: 1em;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
-    background-color: #003d80;
+header .nav-menu a:hover {
+    color: #ffd700;
 }
 
 /* Booking Form */
 .booking-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
     gap: 10px;
-    flex: 1;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form button {
-    padding: 10px;
+    padding: 8px;
+    font-size: 0.9rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 0.9em;
-    min-width: 120px;
-}
-
-.booking-form input:focus,
-.booking-form select:focus {
-    border-color: #007BFF;
-    outline: none;
 }
 
 .booking-form button {
-    background-color: #ffca28;
-    color: #000;
-    border: none;
+    background-color: #ffd700;
+    color: #004080;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .booking-form button:hover {
     background-color: #ffc107;
 }
 
-/* Main Sections */
-.front-view, .about-us, #rooms, #contact {
-    padding: 30px 15px;
+/* Front View Section */
+.front-view {
     text-align: center;
-    margin: 0 auto;
+    margin: 20px 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+.front-view .hotel-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* About Us Section */
 .about-us {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
 }
 
 /* Rooms Section */
@@ -126,68 +122,98 @@ header h1 {
 }
 
 .room {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     padding: 15px;
-    text-align: center;
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.room:hover {
-    transform: scale(1.05); /* Zoom-in effect */
-    background-color: #e3f2fd; /* Light blue background on hover */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.hotel-image {
-    max-width: 100%;
+.room img {
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .room h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-.price {
-    color: #28a745;
+.room p {
+    margin: 5px 0;
+}
+
+.room .price {
     font-weight: bold;
-    margin-top: 10px;
-    transition: color 0.3s;
+    color: #ff4500;
 }
 
-.price:hover {
-    color: #155724;
+.room:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact Section */
 #contact {
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    background-color: #004080;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: none; /* Initially hidden */
+}
+
+#backToTop:hover {
+    background-color: #002060;
+    transform: scale(1.1);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header-container {
+    header .header-container {
         flex-direction: column;
         align-items: center;
-        padding: 10px 15px;
     }
 
-    .nav-menu {
-        flex-direction: column;
-        gap: 10px;
+    header .nav-menu {
         margin-top: 10px;
+        flex-wrap: wrap;
     }
 
     .booking-form {
         flex-direction: column;
         gap: 10px;
-        justify-content: center;
+    }
+
+    .front-view .hotel-image {
+        max-height: 300px;
+    }
+
+    .about-us p {
+        font-size: 1rem;
     }
 }

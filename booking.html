@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Brothers Hotel</title>
+    <link rel="stylesheet" href="HOTEL.CSS">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="sticky-header">
+        <div class="container header-container">
+            <h1>Brothers Hotel - Booking</h1>
+            <nav class="nav-menu">
+                <a href="Hotel.html">Home</a>
+                <a href="#booking-form">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Booking Section -->
+        <section class="booking-section">
+            <h2>Make a Reservation</h2>
+            <p>Choose your stay and get ready for an unforgettable experience at Brothers Hotel.</p>
+
+            <form class="booking-form" action="#" method="post">
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+                
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+                
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="executive">Executive Suite</option>
+                    <option value="family">Family Room</option>
+                    <option value="adjoining">Adjoining Room</option>
+                    <option value="standard">Standard Room</option>
+                    <option value="connecting">Connecting Room</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // Back to top button functionality
+        window.onscroll = function () {
+            const button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>

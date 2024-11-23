@@ -15,34 +15,10 @@
             <nav class="nav-menu">
                 <a href="#about">About Us</a>
                 <a href="#rooms">Rooms</a>
+                <a href="book.html">Book a Room</a> <!-- Link to the new booking page -->
                 <a href="#contact">Contact</a>
             </nav>
         </div>
-
-        <!-- Booking Form -->
-        <form class="booking-form" action="#" method="post">
-            <label for="check-in">Check-in Date:</label>
-            <input type="date" id="check-in" name="check-in" required>
-            
-            <label for="check-out">Check-out Date:</label>
-            <input type="date" id="check-out" name="check-out" required>
-
-            <label for="room-type">Room Type:</label>
-            <select id="room-type" name="room-type" required>
-                <option value="" disabled selected>Select Room Type</option>
-                <option value="deluxe">Deluxe Room</option>
-                <option value="executive">Executive Suite</option>
-                <option value="family">Family Room</option>
-                <option value="adjoining">Adjoining Room</option>
-                <option value="standard">Standard Room</option>
-                <option value="connecting">Connecting Room</option>
-            </select>
-
-            <label for="guest-count">Number of Guests:</label>
-            <input type="number" id="guest-count" name="guest-count" min="1" max="10" placeholder="Enter number of guests" required>
-            
-            <button type="submit">Book Now</button>
-        </form>
     </header>
 
     <!-- About Us Section -->
@@ -108,11 +84,8 @@
         </div>
     </section>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop">Back to Top</button>
-
     <script>
-        // Show Back-to-Top Button on Scroll
+        // Back to Top Button script
         const backToTop = document.getElementById("backToTop");
         window.addEventListener("scroll", () => {
             if (window.scrollY > 300) {

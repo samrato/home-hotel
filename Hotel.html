@@ -51,7 +51,9 @@
         <section id="about-us" class="about-us">
             <div class="container center-section">
                 <h2>About Us</h2>
-                <p>Brothers Hotel is your gateway to a world of luxury and comfort, where every detail is designed to create a memorable experience. Nestled in a serene and picturesque environment, our hotel is the perfect retreat for relaxation, leisure, and unparalleled hospitality. Whether you're traveling for business or pleasure, our diverse selection of rooms caters to individuals, families, and groups, ensuring every guest feels at home. From elegant deluxe rooms to spacious family suites, we blend modern amenities with a warm, welcoming ambiance. Our commitment to excellence shines in every service we provide, from the moment you arrive to the moment you depart. Discover the perfect balance of sophistication and comfort at Brothers Hotel—your ultimate destination for unforgettable stay.</p>
+                <p>
+                    Brothers Hotel is your gateway to a world of luxury and comfort, where every detail is designed to create a memorable experience. Nestled in a serene and picturesque environment, our hotel is the perfect retreat for relaxation, leisure, and unparalleled hospitality. Whether you're traveling for business or pleasure, our diverse selection of rooms caters to individuals, families, and groups, ensuring every guest feels at home. From elegant deluxe rooms to spacious family suites, we blend modern amenities with a warm, welcoming ambiance. Our commitment to excellence shines in every service we provide, from the moment you arrive to the moment you depart. Discover the perfect balance of sophistication and comfort at Brothers Hotel—your ultimate destination for unforgettable stays.
+                </p>
             </div>
         </section>
 
@@ -118,5 +120,24 @@
         </section>
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        // Show or hide the button based on scroll position
+        window.onscroll = function () {
+            const button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Smooth scroll back to the top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>

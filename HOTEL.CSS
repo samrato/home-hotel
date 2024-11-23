@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* Header */
 .sticky-header {
     position: sticky;
@@ -41,9 +45,18 @@ header h1 {
     margin-bottom: 0.5em;
 }
 
-header h2 {
-    font-size: 1.2em;
-    font-weight: normal;
+header nav {
+    margin: 1em 0;
+}
+
+.nav-menu a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+header p {
+    margin-top: 10px;
 }
 
 /* Front View Section */
@@ -76,7 +89,7 @@ header h2 {
 }
 
 .room:hover {
-    transform: translateY(-5px);
+    transform: scale(0.95); /* Zoom-out effect */
     background-color: #f0f8ff;
 }
 
@@ -91,19 +104,22 @@ header h2 {
     font-size: 1.2em;
 }
 
-/* Contact Section */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.price {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.2s;
 }
 
-.contact-section {
-    background: #f9f9f9;
-    border-radius: 8px;
+.price:hover {
+    color: #155724;
+}
+
+/* About Us Section */
+.about-us {
     padding: 20px;
+    background-color: #e9ecef;
     text-align: center;
-    margin-top: 20px;
 }
 
 /* Responsive Design */

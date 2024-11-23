@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Brothers Hotel</title>
+    <link rel="stylesheet" href="HOTEL.CSS">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #004080, #ffdd40);
+            color: #fff;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-attachment: fixed;
+        }
+
+        .thank-you-page {
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ffdd40;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: #004080;
+            background-color: #ffdd40;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #ffc107;
+            transform: scale(1.05);
+        }
+
+        /* Add subtle animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Glittering effect for background */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.2;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <main class="thank-you-page">
+        <section>
+            <h1>Thank You for Your Booking!</h1>
+            <p>
+                We have received your reservation request and will get back to you shortly with the confirmation details. 
+                If you have any urgent inquiries, please feel free to <a href="mailto:samratdeactivator@gmail.com" style="color:#ff5640; text-decoration:underline;">email us</a>.
+            </p>
+            <p>We look forward to hosting you at Brothers Hotel!</p>
+            <a href="Hotel.html" class="btn">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

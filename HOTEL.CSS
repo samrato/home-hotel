@@ -55,10 +55,6 @@ header nav {
     font-size: 1.1em;
 }
 
-header p {
-    margin-top: 10px;
-}
-
 /* Front View Section */
 .front-view {
     text-align: center;
@@ -69,6 +65,16 @@ header p {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
+}
+
+/* About Us and Contact Section */
+.center-section {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Rooms Section */
@@ -89,8 +95,8 @@ header p {
 }
 
 .room:hover {
-    transform: scale(0.95); /* Zoom-out effect */
-    background-color: #f0f8ff;
+    transform: scale(1.05); /* Zoom-in effect */
+    background-color: #ffebcc; /* Change background color on hover */
 }
 
 .hotel-image {
@@ -113,13 +119,6 @@ header p {
 
 .price:hover {
     color: #155724;
-}
-
-/* About Us Section */
-.about-us {
-    padding: 20px;
-    background-color: #e9ecef;
-    text-align: center;
 }
 
 /* Responsive Design */

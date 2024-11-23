@@ -23,33 +23,65 @@
         <!-- Booking Section -->
         <section class="booking-section">
             <h2>Make a Reservation</h2>
-            <p>Choose your stay and get ready for an unforgettable experience at Brothers Hotel.</p>
+            <p>We look forward to hosting you at Brothers Hotel. Please fill out the form below to complete your reservation.</p>
 
+            <!-- Booking Form -->
             <form class="booking-form" action="#" method="post">
-                <label for="check-in">Check-in Date:</label>
-                <input type="date" id="check-in" name="check-in" required>
-                
-                <label for="check-out">Check-out Date:</label>
-                <input type="date" id="check-out" name="check-out" required>
-                
-                <label for="room-type">Room Type:</label>
-                <select id="room-type" name="room-type" required>
-                    <option value="deluxe">Deluxe Room</option>
-                    <option value="executive">Executive Suite</option>
-                    <option value="family">Family Room</option>
-                    <option value="adjoining">Adjoining Room</option>
-                    <option value="standard">Standard Room</option>
-                    <option value="connecting">Connecting Room</option>
-                </select>
 
-                <!-- New Fields: Email and Phone -->
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <!-- Email Address -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
 
-                <button type="submit">Book Now</button>
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Check-in Date -->
+                <div class="form-group">
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+
+                <!-- Check-out Date -->
+                <div class="form-group">
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+
+                <!-- Room Type -->
+                <div class="form-group">
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="" disabled selected>Select Room Type</option>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="executive">Executive Suite</option>
+                        <option value="family">Family Room</option>
+                        <option value="adjoining">Adjoining Room</option>
+                        <option value="standard">Standard Room</option>
+                        <option value="connecting">Connecting Room</option>
+                    </select>
+                </div>
+
+                <!-- Special Requests or Comments -->
+                <div class="form-group">
+                    <label for="comments">Special Requests or Considerations:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Any special requests, preferences, or considerations"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit">Book Now</button>
+                </div>
             </form>
         </section>
     </main>

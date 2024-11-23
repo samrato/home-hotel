@@ -8,96 +8,136 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="header-container">
+    <!-- Header Section -->
+    <header class="sticky-header">
+        <div class="container header-container">
             <h1>Brothers Hotel</h1>
             <nav class="nav-menu">
-                <a href="#about">About Us</a>
+                <a href="#about-us">About Us</a>
                 <a href="#rooms">Rooms</a>
-                <a href="book.html">Book a Room</a> <!-- Link to the new booking page -->
                 <a href="#contact">Contact</a>
             </nav>
+
+            <!-- Booking Form -->
+            <form class="booking-form" action="#" method="post">
+                <input type="date" name="check-in" placeholder="Check-in" required>
+                <input type="date" name="check-out" placeholder="Check-out" required>
+                <select name="room-type" required>
+                    <option value="" disabled selected>Room Type</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="executive">Executive Suite</option>
+                    <option value="family">Family Room</option>
+                    <option value="adjoining">Adjoining Room</option>
+                    <option value="standard">Standard Room</option>
+                    <option value="connecting">Connecting Room</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
         </div>
     </header>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-us">
-        <h2>About Us</h2>
-        <p>Brothers Hotel is a luxury destination where elegance meets comfort. Located in a serene environment, we offer exceptional hospitality services to ensure your stay is memorable. 
-           Our rooms are tailored to cater to individuals, families, and groups. Whether you're on vacation, attending a business meeting, or celebrating a special event, we have the perfect accommodations for you. 
-           With state-of-the-art facilities, exquisite dining options, and warm hospitality, Brothers Hotel guarantees an unforgettable experience.</p>
-    </section>
+    <main>
+        <!-- Front View Section -->
+        <section class="front-view">
+            <div class="room">
+                <h3>Front View of Brothers Hotel</h3>
+                <p>Spacious, deluxe rooms, executive suites, family rooms, adjoining rooms, and connecting rooms.</p>
+                <p>The place to be.</p>
+                <img class="hotel-image" src="photo/JP4.jpg" alt="Hotel Front View">
+            </div>
+        </section>
 
-    <!-- Rooms Section -->
-    <section id="rooms" class="rooms">
-        <div class="container">
-            <h2>Our Rooms</h2>
-            <div class="rooms-grid">
-                <div class="room">
-                    <img class="hotel-image" src="photo/jp2.jpg" alt="Room 1">
-                    <h3>Deluxe Room</h3>
-                    <p>Spacious and luxurious room with a beautiful view.</p>
-                    <p class="price">Price: 1500 per night</p>
-                </div>
-                <div class="room">
-                    <img class="hotel-image" src="photo/jp1.jpg" alt="Room 2">
-                    <h3>Executive Suite</h3>
-                    <p>Elegant suite with modern amenities and a private balcony.</p>
-                    <p class="price">Price: 2000 per night</p>
-                </div>
-                <div class="room">
-                    <img class="hotel-image" src="photo/JP3.jpg" alt="Room 3">
-                    <h3>Family Room</h3>
-                    <p>Designed for families, offering more sleeping space and child-friendly amenities.</p>
-                    <p class="price">Price: 2000 per night</p>
-                </div>
-                <div class="room">
-                    <img class="hotel-image" src="photo/JP7.jpg" alt="Room 4">
-                    <h3>Adjoining Rooms</h3>
-                    <p>Rooms next to each other without an internal connecting door.</p>
-                    <p class="price">Price: 1000 per night</p>
-                </div>
-                <div class="room">
-                    <img class="hotel-image" src="photo/JP5.jpg" alt="Room 5">
-                    <h3>Standard Room</h3>
-                    <p>Basic accommodations with standard amenities and furnishings.</p>
-                    <p class="price">Price: 800 per night</p>
-                </div>
-                <div class="room">
-                    <img class="hotel-image" src="photo/JP6.jpg" alt="Room 6">
-                    <h3>Connecting Rooms</h3>
-                    <p>Two or more rooms with a connecting door, ideal for families or groups.</p>
-                    <p class="price">Price: 3000 per night</p>
+        <!-- About Us Section -->
+        <section id="about-us" class="about-us">
+            <div class="container center-section">
+                <h2>About Us</h2>
+                <p>
+                    Brothers Hotel is your gateway to a world of luxury and comfort, where every detail is designed to create a memorable experience. Nestled in a serene and picturesque environment, our hotel is the perfect retreat for relaxation, leisure, and unparalleled hospitality. Whether you're traveling for business or pleasure, our diverse selection of rooms caters to individuals, families, and groups, ensuring every guest feels at home. From elegant deluxe rooms to spacious family suites, we blend modern amenities with a warm, welcoming ambiance. Our commitment to excellence shines in every service we provide, from the moment you arrive to the moment you depart. Discover the perfect balance of sophistication and comfort at Brothers Hotel—your ultimate destination for unforgettable stays.
+                </p>
+            </div>
+        </section>
+
+        <!-- Rooms Section -->
+        <section id="rooms">
+            <div class="container">
+                <h2>Our Rooms</h2>
+
+                <div class="rooms-grid">
+                    <!-- Room 1 -->
+                    <div class="room">
+                        <img class="hotel-image" src="photo/jp2.jpg" alt="Deluxe Room">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious and luxurious room with a beautiful view.</p>
+                        <p class="price">$1500 per night</p>
+                    </div>
+                    <!-- Room 2 -->
+                    <div class="room">
+                        <img class="hotel-image" src="photo/jp1.jpg" alt="Executive Suite">
+                        <h3>Executive Suite</h3>
+                        <p>Elegant suite with modern amenities and a private balcony.</p>
+                        <p class="price">$2000 per night</p>
+                    </div>
+                    <!-- Room 3 -->
+                    <div class="room">
+                        <img class="hotel-image" src="photo/JP3.jpg" alt="Family Room">
+                        <h3>Family Room</h3>
+                        <p>Specifically designed for families, offering more sleeping space and child-friendly amenities.</p>
+                        <p class="price">$2000 per night</p>
+                    </div>
+                    <!-- Room 4 -->
+                    <div class="room">
+                        <img class="hotel-image" src="photo/JP7.jpg" alt="Adjoining Room">
+                        <h3>Adjoining Rooms</h3>
+                        <p>Rooms located next to each other, but without an internal connecting door.</p>
+                        <p class="price">$1000 per night</p>
+                    </div>
+                    <!-- Room 5 -->
+                    <div class="room">
+                        <img class="hotel-image" src="photo/JP5.jpg" alt="Standard Room">
+                        <h3>Standard Room</h3>
+                        <p>The most basic type of hotel room, usually with standard amenities and furnishings.</p>
+                        <p class="price">$800 per night</p>
+                    </div>
+                    <!-- Room 6 -->
+                    <div class="room">
+                        <img class="hotel-image" src="photo/airbnb.png" alt="Connecting Room">
+                        <h3>Connecting Rooms</h3>
+                        <p>Two or more rooms with a connecting door, suitable for families or groups.</p>
+                        <p class="price">$3000 per night</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to make a reservation, please contact us:</p>
-            <p>Email: <a href="mailto:samratadeactivator@gmail.com">samratadeactivator@gmail.com</a></p>
-            <p>Phone: 0714747942</p>
-        </div>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container center-section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to make a reservation, please contact us:</p>
+                <p>Email: <a href="mailto:samratadeactivator@gmail.com">samratadeactivator@gmail.com</a></p>
+                <p>Phone: <a href="tel:+254714747942">0714747942</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
 
     <script>
-        // Back to Top Button script
-        const backToTop = document.getElementById("backToTop");
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                backToTop.style.display = "block";
+        // Show or hide the button based on scroll position
+        window.onscroll = function () {
+            const button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.style.display = "block";
             } else {
-                backToTop.style.display = "none";
+                button.style.display = "none";
             }
-        });
+        };
 
-        backToTop.addEventListener("click", () => {
+        // Smooth scroll back to the top
+        function scrollToTop() {
             window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+        }
     </script>
 </body>
 </html>

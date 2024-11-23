@@ -57,60 +57,46 @@ header .nav-menu a:hover {
     color: #ffd700;
 }
 
-/* Booking Form */
+/* Booking Form Styles */
+.booking-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
 .booking-form {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: #333;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form button {
-    padding: 8px;
-    font-size: 0.9rem;
+    padding: 10px;
+    font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
 .booking-form button {
-    background-color: #ffd700;
-    color: #004080;
+    background-color: #004080;
+    color: white;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .booking-form button:hover {
-    background-color: #ffc107;
-}
-
-/* Front View Section */
-.front-view {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.front-view .hotel-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* About Us Section */
-.about-us {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.about-us p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
+    background-color: #002060;
 }
 
 /* Rooms Section */
@@ -151,6 +137,19 @@ header .nav-menu a:hover {
 .room:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
 }
 
 /* Contact Section */

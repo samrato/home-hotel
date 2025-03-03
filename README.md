@@ -28,15 +28,18 @@ This is a modern and responsive hotel website that provides users with an elegan
 3. Open `index.html` in your browser to view the website.
 
 ### Screenshots
-#### Homepage
-![Homepage Screenshot](./screenshots/homepage.png)
+#### Aboutpage
+![image](https://github.com/user-attachments/assets/43e6880f-bf64-45d1-9b38-c5162802ff9a)
+
 
 #### Room Listing
-![image](https://github.com/user-attachments/assets/6829fd5b-f987-483f-a32a-6d3979a105f8)
+![image](https://github.com/user-attachments/assets/a49119c3-d875-4acc-929e-54c9ae06243e)
+
 
 
 #### Booking Page
-![Booking Page Screenshot](./screenshots/booking-page.png)
+![image](https://github.com/user-attachments/assets/5747a585-c235-448d-adb3-b38d9dabf756)
+
 
 ### Contributing
 If you would like to contribute, please fork the repository and submit a pull request.

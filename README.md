@@ -1,6 +1,6 @@
-# Hotel Website README
+# Hotel Website 
 
-## Project Name: **[Your Hotel Name] Website**
+## Project Name: **home hotel Website**
 
 ### Description
 This is a modern and responsive hotel website that provides users with an elegant interface to explore accommodations, services, and book rooms effortlessly. The website includes high-quality images, an intuitive navigation system, and a secure booking system.

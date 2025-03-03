@@ -32,7 +32,8 @@ This is a modern and responsive hotel website that provides users with an elegan
 ![Homepage Screenshot](./screenshots/homepage.png)
 
 #### Room Listing
-![Room Listing Screenshot](./screenshots/room-listing.png)
+![image](https://github.com/user-attachments/assets/6829fd5b-f987-483f-a32a-6d3979a105f8)
+
 
 #### Booking Page
 ![Booking Page Screenshot](./screenshots/booking-page.png)
@@ -44,6 +45,6 @@ If you would like to contribute, please fork the repository and submit a pull re
 This project is licensed under the MIT License.
 
 ### Contact
-For any inquiries, reach out to **[Your Name]** at **[Your Email]**.
+For any inquiries, reach out to **samrato** at **o714747942**.
 
 
